@@ -27,19 +27,23 @@
                BackgroundColor="AntiqueWhite"
                TextColor="Blue"
                 HorizontalOptions="FillAndExpand"
-                VerticalOptions="StartAndExpand"/>
+                VerticalOptions="StartAndExpand"
+                    x:Name="aboutMeButton"
+                    />
        
         <Button Text="Skills"
                BackgroundColor="AntiqueWhite"
                TextColor="Blue"
                 HorizontalOptions="FillAndExpand"
-                VerticalOptions="StartAndExpand"/>
+                VerticalOptions="StartAndExpand"
+                x:Name="skillsButton"/>
         
         <Button Text="Contact Me"
                BackgroundColor="AntiqueWhite"
                TextColor="Blue"
                 HorizontalOptions="FillAndExpand"
-                VerticalOptions="StartAndExpand"/>
+                VerticalOptions="StartAndExpand"
+                x:Name="contactMeButton"/>
         </StackLayout>
     </StackLayout>
 

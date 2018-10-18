@@ -13,5 +13,10 @@ namespace ARogers_App
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void aboutMeButton_Clicked()
+        {
+
+        }
+    }
 }
