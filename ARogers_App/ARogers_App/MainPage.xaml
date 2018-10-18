@@ -28,8 +28,7 @@
                TextColor="Blue"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="StartAndExpand"
-                    x:Name="aboutMeButton"
-                    />
+                    x:Name="aboutMeButton"/>
        
         <Button Text="Skills"
                BackgroundColor="AntiqueWhite"

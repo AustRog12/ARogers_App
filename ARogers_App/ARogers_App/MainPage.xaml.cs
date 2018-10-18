@@ -14,7 +14,7 @@ namespace ARogers_App
 			InitializeComponent();
 		}
 
-        private void aboutMeButton_Clicked()
+        private void aboutMeButton_Clicked(object sender, EventArgs e)
         {
 
         }
