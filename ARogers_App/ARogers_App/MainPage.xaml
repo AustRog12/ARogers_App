@@ -4,11 +4,40 @@
              xmlns:local="clr-namespace:ARogers_App"
              x:Class="ARogers_App.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout Padding="20"
+                 Spacing="20"
+                 BackgroundColor="Gray">
+
+        <Label Text="Austin Rogers" 
+               TextColor="Blue"
+               FontSize="40"             
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"/>
+        
+        <StackLayout Spacing="60">
+    	
+       
+        <Image Source="Me.png" 
+               HorizontalOptions="CenterAndExpand"/>
+
+        <Button Text="About Me"
+               BackgroundColor="AntiqueWhite"
+               TextColor="Blue"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="StartAndExpand"/>
+       
+        <Button Text="Skills"
+               BackgroundColor="AntiqueWhite"
+               TextColor="Blue"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="StartAndExpand"/>
+        
+        <Button Text="Contact Me"
+               BackgroundColor="AntiqueWhite"
+               TextColor="Blue"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="StartAndExpand"/>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
