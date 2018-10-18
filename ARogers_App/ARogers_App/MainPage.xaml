@@ -12,15 +12,18 @@
                TextColor="Blue"
                FontSize="40"             
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="StartAndExpand"/>
-        
-        <StackLayout Spacing="60">
-    	
-       
-        <Image Source="Me.png" 
-               HorizontalOptions="CenterAndExpand"/>
+                VerticalOptions="CenterAndExpand"/>
 
-        <Button Text="About Me"
+        <Label Text="PlaceHolder For Image"
+               FontSize="60"
+               TextColor="Blue"
+               BackgroundColor="AntiqueWhite"
+               HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"/>
+
+        <StackLayout Spacing="60">
+
+            <Button Text="About Me"
                BackgroundColor="AntiqueWhite"
                TextColor="Blue"
                 HorizontalOptions="FillAndExpand"

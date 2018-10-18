@@ -20,7 +20,4 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)Me.png" />
-  </ItemGroup>
 </Project>
