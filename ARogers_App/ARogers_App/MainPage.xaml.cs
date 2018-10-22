@@ -16,7 +16,17 @@ namespace ARogers_App
 
         private void aboutMeButton_Clicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new AboutMe());
+        }
 
+        private void skillsButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Skills());
+        }
+
+        private void contactMeButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ContactMe());
         }
     }
 }

@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ARogers_App"
-             x:Class="ARogers_App.MainPage">
+             x:Class="ARogers_App.MainPage"
+             BackgroundImage="background.png">
 
     <StackLayout Padding="20"
                  Spacing="20"
@@ -14,10 +15,7 @@
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"/>
 
-        <Label Text="PlaceHolder For Image"
-               FontSize="60"
-               TextColor="Blue"
-               BackgroundColor="AntiqueWhite"
+        <Image Source="me.JPG"    
                HorizontalOptions="CenterAndExpand"
                 VerticalOptions="StartAndExpand"/>
 
@@ -28,21 +26,24 @@
                TextColor="Blue"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="StartAndExpand"
-                    x:Name="aboutMeButton"/>
+                    x:Name="aboutMeButton"
+                    Clicked="aboutMeButton_Clicked"/>
        
         <Button Text="Skills"
                BackgroundColor="AntiqueWhite"
                TextColor="Blue"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="StartAndExpand"
-                x:Name="skillsButton"/>
+                x:Name="skillsButton"
+                Clicked="skillsButton_Clicked"/>
         
         <Button Text="Contact Me"
                BackgroundColor="AntiqueWhite"
                TextColor="Blue"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="StartAndExpand"
-                x:Name="contactMeButton"/>
+                x:Name="contactMeButton"
+                Clicked="contactMeButton_Clicked"/>
         </StackLayout>
     </StackLayout>
 
