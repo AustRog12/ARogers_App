@@ -13,9 +13,9 @@
                TextColor="Blue"
                FontSize="40"             
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"/>
+                VerticalOptions="StartAndExpand"/>
 
-        <Image Source="Me.JPG"    
+        <Image Source="Me.png"    
                HorizontalOptions="CenterAndExpand"
                 VerticalOptions="StartAndExpand"/>
 
