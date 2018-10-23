@@ -2,19 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ARogers_App"
-             x:Class="ARogers_App.MainPage"
-             BackgroundImage="Background.jpg">
+             x:Class="ARogers_App.MainPage">
     
 
     <StackLayout Padding="20"
                  Spacing="20"
-                 BackgroundColor="Gray">
+                 BackgroundColor="LightGray">
 
         <Label Text="Austin Rogers" 
                TextColor="Blue"
-               FontSize="40"             
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="StartAndExpand"/>
+               FontSize="40"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"/>
 
         <Image Source="Me.png" 
                WidthRequest="250"
@@ -27,6 +26,8 @@
             <Button Text="About Me"
                BackgroundColor="AntiqueWhite"
                TextColor="Black"
+                    BorderColor="Black"
+                    BorderWidth="1"
                 HorizontalOptions="Center"
                 VerticalOptions="StartAndExpand"
                     WidthRequest="250"
@@ -37,6 +38,8 @@
         <Button Text="Skills"
                BackgroundColor="AntiqueWhite"
                TextColor="Black"
+                  BorderColor="Black"
+                    BorderWidth="1"
                 HorizontalOptions="Center"
                 VerticalOptions="StartAndExpand"
                 WidthRequest="250"
@@ -47,6 +50,8 @@
         <Button Text="Contact Me"
                BackgroundColor="AntiqueWhite"
                TextColor="Black"
+                  BorderColor="Black"
+                    BorderWidth="1"
                  HorizontalOptions="Center"
                 VerticalOptions="StartAndExpand"
                     WidthRequest="250"
