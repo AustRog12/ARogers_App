@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ARogers_App"
-             x:Class="ARogers_App.MainPage">
+             x:Class="ARogers_App.MainPage"
+             BackgroundImage="Background.jpg">
     
 
     <StackLayout Padding="20"
@@ -21,29 +22,35 @@
                HorizontalOptions="CenterAndExpand"
                 VerticalOptions="StartAndExpand"/>
 
-        <StackLayout Spacing="60">
+        <StackLayout Spacing="50">
 
             <Button Text="About Me"
                BackgroundColor="AntiqueWhite"
                TextColor="Black"
-                HorizontalOptions="FillAndExpand"
+                HorizontalOptions="Center"
                 VerticalOptions="StartAndExpand"
+                    WidthRequest="250"
+                    HeightRequest="50"
                     x:Name="aboutMeButton"
                     Clicked="aboutMeButton_Clicked"/>
        
         <Button Text="Skills"
                BackgroundColor="AntiqueWhite"
                TextColor="Black"
-                HorizontalOptions="FillAndExpand"
+                HorizontalOptions="Center"
                 VerticalOptions="StartAndExpand"
+                WidthRequest="250"
+                HeightRequest="50"
                 x:Name="skillsButton"
                 Clicked="skillsButton_Clicked"/>
         
         <Button Text="Contact Me"
                BackgroundColor="AntiqueWhite"
                TextColor="Black"
-                HorizontalOptions="FillAndExpand"
+                 HorizontalOptions="Center"
                 VerticalOptions="StartAndExpand"
+                    WidthRequest="250"
+                    HeightRequest="50"
                 x:Name="contactMeButton"
                 Clicked="contactMeButton_Clicked"/>
         </StackLayout>

@@ -14,6 +14,7 @@
                FontSize="40"             
                 HorizontalOptions="Center"
                 VerticalOptions="Start"/>
+            
             <Image Source="Me.png"    
                HorizontalOptions="CenterAndExpand"
                 VerticalOptions="Start"
@@ -21,10 +22,20 @@
                    WidthRequest="250"/>
             <ScrollView>
                 <StackLayout>
+                    <Label Text="About Me"
+                           TextColor="Black"
+                           FontSize="40"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand"
+                           WidthRequest="250"
+                           BackgroundColor="AntiqueWhite"/>
+                    
                     <Label Text="I was born and raised in Fort Scott, KS. After graduating from Fort Scott High School, I got my associate of science degree from Fort Scott Community College. I'm currently in my last semester at Pittsburg State University pursuing a Business Administration degree in Computer Information Systems. I'm currently an Application Support Analysist for Koch Industries Inc. in Wichita, KS."
                            BackgroundColor="AntiqueWhite"
                            TextColor="Black"
-                           Font="20"
+                           Font="16"
+                           WidthRequest="250"
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand"/>
                 </StackLayout>
