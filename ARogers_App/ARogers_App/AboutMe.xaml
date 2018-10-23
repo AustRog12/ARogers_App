@@ -6,36 +6,29 @@
     
     <ContentPage.Content>
         <StackLayout Padding="20"
+                     Spacing="20"
                  BackgroundColor="Gray">
 
             <Label Text="Austin Rogers" 
                TextColor="Blue"
                FontSize="40"             
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="StartAndExpand"/>
-
+                HorizontalOptions="Center"
+                VerticalOptions="Start"/>
             <Image Source="Me.png"    
                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="StartAndExpand"
-                   HeightRequest="250"/>
-            
+                VerticalOptions="Start"
+                   HeightRequest="250"
+                   WidthRequest="250"/>
             <ScrollView>
                 <StackLayout>
-
                     <Label Text="I was born and raised in Fort Scott, KS. After graduating from Fort Scott High School, I got my associate of science degree from Fort Scott Community College. I'm currently in my last semester at Pittsburg State University pursuing a Business Administration degree in Computer Information Systems. I'm currently an Application Support Analysist for Koch Industries Inc. in Wichita, KS."
                            BackgroundColor="AntiqueWhite"
-                           TextColor="Blue"
-                           VerticalOptions="StartAndExpand"
+                           TextColor="Black"
+                           Font="20"
+                           VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand"/>
                 </StackLayout>
             </ScrollView>
-
-
-
-
-
-
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

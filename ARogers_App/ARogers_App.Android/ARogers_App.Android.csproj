@@ -90,9 +90,6 @@
     <Folder Include="Resources\drawable-xxxhdpi\" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\background.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\Me.png" />
   </ItemGroup>
   <Import Project="..\ARogers_App\ARogers_App.projitems" Label="Shared" />
