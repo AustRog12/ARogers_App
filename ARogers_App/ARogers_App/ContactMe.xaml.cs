@@ -16,5 +16,26 @@ namespace ARogers_App
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(nameEntry.Text))
+            {
+                DisplayAlert("Error", "Please Enter Name", "Ok");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(emailEntry.Text))
+            {
+                DisplayAlert("Error", "Please Enter Email", "Ok");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(messageEditor.Text))
+            {
+                DisplayAlert("Error", "Please Enter Message", "Ok");
+                return;
+            }
+        }
+    }
 }

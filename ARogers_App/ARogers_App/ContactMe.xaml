@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ARogers_App.ContactMe">
     <ContentPage.Content>
-        <StackLayout Padding="20"
+        <ScrollView>
+            <StackLayout Padding="20"
                      Spacing="20"
                      BackgroundColor="LightGray">
 
@@ -12,15 +13,29 @@
                    TextColor="Blue"
                    VerticalOptions="Start"
                    HorizontalTextAlignment="Center"/>
-           
+
             <Image Source="Me.png" 
                WidthRequest="250"
                HeightRequest="250"
                HorizontalOptions="CenterAndExpand"
                 VerticalOptions="StartAndExpand"/>
-            
-          
+
+            <Entry x:Name="nameEntry"
+                   Placeholder="name"/>
+
+            <Entry x:Name="emailEntry"
+                   Placeholder="email"/>
+
+                <Label Text="Enter your message below"/>
+                <Editor x:Name="messageEditor"
+                HeightRequest="100"/>
+
+            <Button Text="Submit"
+                    BackgroundColor="Green"
+                    TextColor="White"
+                    Clicked="Button_OnClicked"/>
 
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
