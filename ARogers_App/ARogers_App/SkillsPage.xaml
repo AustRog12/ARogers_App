@@ -1,26 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ARogers_App.ContactMe">
+             x:Class="ARogers_App.Skills">
     <ContentPage.Content>
         <StackLayout Padding="20"
                      Spacing="20"
                      BackgroundColor="LightGray">
 
-            <Label Text="Contact Me"
+                <Label Text="Skills"
                    FontSize="40"
                    TextColor="Blue"
                    VerticalOptions="Start"
                    HorizontalTextAlignment="Center"/>
-           
-            <Image Source="Me.png" 
+
+                <Image Source="Me.png" 
                WidthRequest="250"
                HeightRequest="250"
                HorizontalOptions="CenterAndExpand"
                 VerticalOptions="StartAndExpand"/>
-            
-          
 
+            <Entry x:Name="skillEntry"/>
+            <Button Text="Add Skill"
+                    Clicked="Button_OnClicked"/>
+
+            <ListView x:Name="skillsListView"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

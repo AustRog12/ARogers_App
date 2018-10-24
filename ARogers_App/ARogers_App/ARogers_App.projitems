@@ -27,8 +27,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Skills.xaml.cs">
-      <DependentUpon>Skills.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)SkillsPage.xaml.cs">
+      <DependentUpon>SkillsPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -39,7 +39,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Skills.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SkillsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
