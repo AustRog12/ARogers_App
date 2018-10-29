@@ -19,17 +19,15 @@ namespace ARogers_App
             InitializeComponent();
 
             this.Skills = new ObservableCollection<Skill>();
-            this.Skills.Add(new Skill { Name = "C# Coding", Description = "Mobile development with Xamarin forms" });
-            this.Skills.Add(new Skill { Name = "Speaking", Description = "Public Speaking" });
+            this.Skills.Add(new Skill
+            { Name = "C# Coding", Description = "Mobile development with Xamarin forms" });
+            this.Skills.Add(new Skill
+            { Name = "Speaking", Description = "Public Speaking" });
 
-            skillsListView.ItemsSource = this.Skills;
+             skillsListView.ItemsSource = this.Skills;
 		}
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
-
+    
         public class Skill
         {
 

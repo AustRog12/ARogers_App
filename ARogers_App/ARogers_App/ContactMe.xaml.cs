@@ -36,6 +36,7 @@ namespace ARogers_App
                 DisplayAlert("Error", "Please Enter Message", "Ok");
                 return;
             }
+            DisplayAlert("Success!", "Thank you for your time", "Ok");
         }
     }
 }

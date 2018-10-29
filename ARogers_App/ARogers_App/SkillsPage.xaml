@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ARogers_App.Skills">
+             x:Class="ARogers_App.SkillsPage">
     <ContentPage.Content>
         <StackLayout Padding="20"
                      Spacing="20"
@@ -23,28 +23,18 @@
                       HasUnevenRows="True">
                       <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-
-                            <Grid Margin="10">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="30"/>
-                                    <RowDefinition Height="*"/>
-                                </Grid.RowDefinitions>
-
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="50"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-
-                            
-                                <Label Text="{Binding Name}"
-                                       FontAttributes="Bold"
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding Name}"  
                                        FontSize="24"
-                                       Grid.Row="1"
-                                       Grid.RowSpan="2"/>
-                            </Grid>
-                        
-                    </ViewCell>
+                                       FontAttributes="Bold"
+                                       TextColor="Black"/>
+                                <Label Text="{Binding Description}"
+                                      FontSize="16"
+                                       TextColor="Black"/>
+
+                            </StackLayout>
+                        </ViewCell>
                 </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
