@@ -13,13 +13,16 @@ namespace ARogers_App
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SkillsPage : ContentPage
 	{
-        public ObservableCollection<string> Skills { get; set; }
-		public SkillsPage ()
-		{
-			InitializeComponent ();
+        public ObservableCollection<Skill> Skills { get; set; }
+        public SkillsPage()
+        {
+            InitializeComponent();
 
-            this.Skills = new ObservableCollection<string>();
+            this.Skills = new ObservableCollection<Skill>();
+            this.Skills.Add(new Skill { Name = "C# Coding", Description = "Mobile development with Xamarin forms" });
+            this.Skills.Add(new Skill { Name = "Speaking", Description = "Public Speaking" });
 
+            skillsListView.ItemsSource = this.Skills;
 		}
 
         private void InitializeComponent()
@@ -27,13 +30,12 @@ namespace ARogers_App
             throw new NotImplementedException();
         }
 
-        private void Button_OnClicked(object sender, EventArgs e)
+        public class Skill
         {
-            this.Skills.Add(skillEntry.Text);
 
-            skillEntry.Text = "";
+            public string Name { get; set; }
+            public string Description { get; set; }
 
-            skillsListView.ItemsSource = this.Skills;
         }
     }
 }

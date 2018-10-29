@@ -19,12 +19,36 @@
                HorizontalOptions="CenterAndExpand"
                 VerticalOptions="StartAndExpand"/>
 
-            <Entry x:Name="skillEntry"/>
-            <Button Text="Add Skill"
-                    Clicked="Button_OnClicked"/>
+            <ListView x:Name="skillsListView"
+                      HasUnevenRows="True">
+                      <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
 
-            <ListView x:Name="skillsListView"/>
-            
+                            <Grid Margin="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                            
+                                <Label Text="{Binding Name}"
+                                       FontAttributes="Bold"
+                                       FontSize="24"
+                                       Grid.Row="1"
+                                       Grid.RowSpan="2"/>
+                            </Grid>
+                        
+                    </ViewCell>
+                </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
