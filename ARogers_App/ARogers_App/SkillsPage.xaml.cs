@@ -22,7 +22,11 @@ namespace ARogers_App
             this.Skills.Add(new Skill
             { Name = "C# Coding", Description = "Mobile development with Xamarin forms" });
             this.Skills.Add(new Skill
-            { Name = "Speaking", Description = "Public Speaking" });
+            { Name = "Visual Basic", Description = "Intermediate knowledge in VB" });
+            this.Skills.Add(new Skill
+            { Name = "Microsoft Suite", Description = "Proficient in Office apps" });
+            this.Skills.Add(new Skill
+            { Name = "Communication", Description = "Communicating in a professional business setting" });
 
              skillsListView.ItemsSource = this.Skills;
 		}

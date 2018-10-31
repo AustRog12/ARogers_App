@@ -30,7 +30,7 @@
                                        FontAttributes="Bold"
                                        TextColor="Black"/>
                                 <Label Text="{Binding Description}"
-                                      FontSize="16"
+                                      FontSize="14"
                                        TextColor="Black"/>
 
                             </StackLayout>
